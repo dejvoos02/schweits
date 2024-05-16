@@ -35,10 +35,17 @@ h2 {
 	max-width: 1140px
 }
 
-.header__greeting,
+
 .header__name,
 .header__job,
 .header__description {
+	color: #0b0b15;
+}
+.header__greeting{
+	font-size: 20px;
+	font-weight: bold;
+	padding-top: 4vw;
+	margin-bottom: 0;
 	color: #0b0b15;
 }
 .header__name {
@@ -109,11 +116,13 @@ h2 {
 	text-align: center;
 }
 .left-side__name {
-	margin: 2vw 0 1vw;
+	margin: 2vw 0 .5vw;
 }
 .left-side__major {
 	color: #ff9301;
 	margin: 0;
+	text-align: center;
+	font-weight: 500;
 }
 .biography__right-side {
 	margin-left: 4vw;
@@ -366,10 +375,10 @@ h2 {
 
 .contact__map iframe {
 	width: 100%;
+	filter: grayscale(100%);
 }
 .contact__map {
 	border: 3px solid white;
-	filter: grayscale(0%);
 }
 
 .footer::before {
@@ -641,12 +650,15 @@ h2 {
 		justify-content: center;
 		align-items: center;		
 	}
+	.footer__left{
+		height: 100%;
+	}
 	.footer__right > p {
 		margin: 0;
 		padding: 0;
 	}
 	.footer__social-icon.logo{
-		padding: 0 0.5em 0 0.5em;
+		padding: 0.5em 0.5em 0 0.5em;
 	}
 	.section-title{
 		margin: 4vw 0 4vw 0;
