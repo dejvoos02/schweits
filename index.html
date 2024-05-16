@@ -15,9 +15,9 @@
 
     <header class="header">
         <div class="wrapper">
-            <h3 class="header__greeting">Hello, My name is</h3>
-            <h1 class="header__name header__name--big">D. Svajda</h1>
-            <h2 class="header__job header__job--highlighted">Full-Stack Developer</h2>
+            <p class="header__greeting">Hello, My name is</p>  <!-- HIERARCHIE OPRAVENO (změna z h3 na p)-->
+            <h1 class="header__name header__name--big">D. Svajda</h1> 
+            <h2 class="header__job header__job--highlighted">Full-Stack Developer</h2> 
             <p class="header__description">I design and develop services for customers of all sizes, specializing in
                 creating stylish, modern webstites, web services and online stores.</p>
             <nav class="header__nav">
@@ -40,27 +40,29 @@
     <main class="main">
         
         <section id="biography" class="biography border-dark wrapper">
-            <div class="biography__left-side">
-                <img src="myAvatar.svg" alt="MujAvatar" class="left-side__image">
-                <h2 class="left-side__name">D. Svajda</h2>
-                <h3 class="left-side__major">Full-Stack Developer</h3>
-            </div>
-            <div class="biography__right-side">
-                <h2 class="right-side__title section-title">Biography</h2>
-                <p class="right-side__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio magnam
-                    impedit suscipit asperiores tenetur aliquam tempore itaque facere repellendus adipisci iusto
-                    officia, nobis odio molestias architecto possimus, quis atque laborum?lore</p>
-                <p class="right-side__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio magnam
-                    impedit suscipit asperiores tenetur aliquam tempore itaque facere repellendus adipisci iusto
-                    officia, nobis odio molestias architecto possimus, quis atque laborum?lorem</p>
-                <p class="right-side__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio magnam
-                    impedit suscipit asperiores tenetur aliquam tempore itaque facere repellendus adipisci iusto
-                    officia, nobis odio molestias architecto possimus, quis atque laborum?lorem</p>
-            </div>
-
+            
+                <div class="biography__left-side">
+                    <img src="myAvatar.svg" alt="MujAvatar" class="left-side__image">
+                    <h2 class="left-side__name">D. Svajda</h2>
+                    <p class="left-side__major">Full-Stack Developer</p>  <!-- HIERARCHIE OPRAVENO (změna z h3 na p) -->
+                </div>
+                <article> <!-- OPRAVENO - ČLANEK-->
+                    <div class="biography__right-side">
+                        <h2 class="right-side__title section-title">Biography</h2>
+                        <p class="right-side__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio magnam
+                            impedit suscipit asperiores tenetur aliquam tempore itaque facere repellendus adipisci iusto
+                            officia, nobis odio molestias architecto possimus, quis atque laborum?lore</p>
+                        <p class="right-side__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio magnam
+                            impedit suscipit asperiores tenetur aliquam tempore itaque facere repellendus adipisci iusto
+                            officia, nobis odio molestias architecto possimus, quis atque laborum?lorem</p>
+                        <p class="right-side__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio magnam
+                            impedit suscipit asperiores tenetur aliquam tempore itaque facere repellendus adipisci iusto
+                            officia, nobis odio molestias architecto possimus, quis atque laborum?lorem</p>
+                    </div>
+                </article> <!-- OPRAVENO - ČLANEK-->
         </section>
-
-        <section id="what-i-do" class="what-i-do">
+        <!-- HIERARCHIE NADPISŮ SPRÁVNĚ-->
+        <section id="what-i-do" class="what-i-do">   
             <div class="wrapper">
                 <div>
                     <h2 class="section-title">What I Do?</h2>
@@ -68,36 +70,46 @@
                 <div class="flex-container">
                     <div class="box">
                         <img src="tuzka.svg" alt ="pencil" class="box-image">
-                        <div class="box__innerContent">
-                            <h3>Web design</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus necessitatibus
-                                laudantium
-                                debitis maiores in officia, </p>
-                        </div>
+                        <article> <!-- OPRAVENO - ČLANEK-->
+                            <div class="box__innerContent">
+                                <h3>Web design</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus necessitatibus
+                                    laudantium
+                                    debitis maiores in officia, </p>
+                            </div>
+                        </article> <!-- OPRAVENO - ČLANEK-->
                     </div>
+
                     <div class="box">
                         <img src="monitor.svg" alt ="monitor" class="box-image">
-                        <div class="box__innerContent">
-                            <h3>Web development</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus necessitatibus
-                                laudantium
-                                debitis maiores in officia,</p>
-                        </div>
+                        <article> <!-- OPRAVENO - ČLANEK-->
+                            <div class="box__innerContent">
+                                <h3>Web development</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus necessitatibus
+                                    laudantium
+                                    debitis maiores in officia,
+                                </p>
+                            </div>
+                        </article> <!-- OPRAVENO - ČLANEK-->
                     </div>
+
                     <div class="box">
-                        <img src="kruhy.svg" alt="circles" class="box-image">
-                        <div class="box__innerContent">
-                            <h3>Seo Marketing</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus necessitatibus
-                                laudantium
-                                debitis maiores in officia,</p>
-                        </div>
+                        <article> <!-- OPRAVENO - ČLANEK-->
+                            <img src="kruhy.svg" alt="circles" class="box-image">
+                            <div class="box__innerContent">
+                                <h3>Seo Marketing</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus necessitatibus
+                                    laudantium
+                                    debitis maiores in officia,
+                                </p>
+                            </div>
+                        </article> <!-- OPRAVENO - ČLANEK--> 
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="awards" class="awards wrapper">
+        <section id="awards" class="awards wrapper">  <!-- HIERARCHIE NADPISŮ SPRÁVNĚ-->
             <h2 class="section-title">Awards</h2>
             <div class="flex-container">
                 <div class="box">
@@ -115,7 +127,7 @@
             </div>
         </section>
 
-        <section id="experience" class="experience">
+        <section id="experience" class="experience"> <!-- HIERARCHIE NADPISŮ SPRÁVNĚ-->
             <div class="wrapper">
                 <div class="experience__title">
                     <h2 class="section-title">Experience</h2>
@@ -123,7 +135,7 @@
                 <div class="flex-container experience__content">
                     <div class="box experience__item">
                         <div class="flex-container__left experience__item-date">
-                            <p>Feb 2021 - Present</p>
+                            <p><time datetime="2021-02">February 2021</time> - Present</p> <!-- OPRAVENO - DATUM -->
                             <div class="experience__item-status">Full Time</div>
                         </div>
                         <div class="flex-container__right experience__item-description">
@@ -136,7 +148,7 @@
                     </div>
                     <div class="box experience__item">
                         <div class="flex-container__left experience__item-date">
-                            <p>Feb 2021 - Present</p>
+                            <p><time datetime="2021-02">February 2021</time> - Present</p> <!-- OPRAVENO - DATUM -->
                             <div class="experience__item-status">Part Time</div>
                         </div>
                         <div class="flex-container__right experience__item-description">
@@ -149,7 +161,7 @@
                     </div>
                     <div class="box experience__item">
                         <div class="flex-container__left experience__item-date">
-                            <p>Feb 2021 - Present</p>
+                            <p><time datetime="2021-02">February 2021</time> - Present</p> <!-- OPRAVENO - DATUM -->
                             <div class="experience__item-status">Full Time</div>
                         </div>
                         <div class="flex-container__right experience__item-description">
@@ -164,7 +176,8 @@
                 </div>
             </div>
         </section>
-        <section id="portfolio" class="portfolio ">
+        
+        <section id="portfolio" class="portfolio "> <!-- HIERARCHIE NADPISŮ SPRÁVNĚ-->
             <div class="wrapper">
                 <div class="portfolio__title">
                     <h2 class="section-title">My Portfolio</h2>
@@ -173,42 +186,42 @@
                     <div class="box portfolio__item">
                         <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="dummyimage" class="dummyimage">
                         <h3>Lorem ipsum</h3>
-                        <p><small>07/13/2305</small></p>
+                        <p><time datetime="2305-07-13">07/13/2305</time></p> <!-- OPRAVENO DATUM -->
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore beatae quae facilis in at
                             perferendis error impedit</p>
                     </div>
                     <div class="box portfolio__item">
                         <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="dummyimage" class="dummyimage">
                         <h3>Lorem ipsum</h3>
-                        <p><small>07/13/2305</small></p>
+                        <p><time datetime="2305-07-13">07/13/2305</time></p> <!-- OPRAVENO DATUM-->
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore beatae quae facilis in at
                             perferendis error impedit</p>
                     </div>
                     <div class="box portfolio__item">
                         <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="dummyimage" class="dummyimage">
                         <h3>Lorem ipsum</h3>
-                        <p><small>07/13/2305</small></p>
+                        <p><time datetime="2305-07-13">07/13/2305</time></p> <!-- OPRAVENO DATUM -->
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore beatae quae facilis in at
                             perferendis error impedit</p>
                     </div>
                     <div class="box portfolio__item">
                         <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="dummyimage" class="dummyimage">
                         <h3>Lorem ipsum</h3>
-                        <p><small>07/13/2305</small></p>
+                        <p><time datetime="2305-07-13">07/13/2305</time></p> <!-- OPRAVENO DATUM-->
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore beatae quae facilis in at
                             perferendis error impedit</p>
                     </div>
                     <div class="box portfolio__item">
                         <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="dummyimage" class="dummyimage">
                         <h3>Lorem ipsum</h3>
-                        <p><small>07/13/2305</small></p>
+                        <p><time datetime="2305-07-13">07/13/2305</time></p> <!-- OPRAVENO DATUM -->
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore beatae quae facilis in at
                             perferendis error impedit</p>
                     </div>
                     <div class="box portfolio__item">
                         <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="dummyimage" class="dummyimage">
                         <h3>Lorem ipsum</h3>
-                        <p><small>07/13/2305</small></p>
+                        <p><time datetime="2305-07-13">07/13/2305</time></p>  <!-- OPRAVENO DATUM-->
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore beatae quae facilis in at
                             perferendis error impedit</p>
                     </div>
@@ -217,7 +230,7 @@
             </div>
         </section>
 
-        <section id="contact" class="contact wrapper">
+        <section id="contact" class="contact wrapper"> <!-- HIERARCHIE NADPISŮ SPRÁVNĚ-->
             <div class="portfolio__title">
                 <h2 class="section-title">Contact</h2>
             </div>
@@ -276,12 +289,17 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer"> 
         <div class="wrapper">
             <div class="flex-container">
                 <div class="footer__left">
-                    <img src="twitter-square-brands.svg" alt="twitter_logo" class="footer__social-icon logo">
-                    <img src="facebook-square-brands.svg" alt="facebook_logo" class="footer__social-icon logo">
+                    <a href="https://twitter.com/elonmusk" target="_blank">
+                        <img src="twitter-square-brands.svg" alt="twitter_logo" class="footer__social-icon logo">
+                    </a>
+                    
+                    <a href="https://www.facebook.com/zuck/" target="_blank">
+                        <img src="facebook-square-brands.svg" alt="facebook_logo" class="footer__social-icon logo">
+                    </a>
                 </div>
                 <div class="footer__right">
                     <p>&copy; Lorem ipsum dolor sit amet 2024 </p>
