@@ -513,7 +513,7 @@ h2 {
 		height: 60px;
 	}
 	.box__innerContent {
-		padding: 100px 40px 40px;
+		padding: 100px 0px 40px 0px; /* upraveno - změna jak ve středním tak malém viewportu*/
 	}
 	.awards {
 		flex-wrap: nowrap;
@@ -663,5 +663,13 @@ h2 {
 	.section-title{
 		margin: 4vw 0 4vw 0;
 	}
-	
+}	
+@media (max-width: 424px) {
+	.wrapper {
+		max-width: calc(100% - 8vw);
+	}
+	*{
+		font-size: 97%;
+	}
 }
+
