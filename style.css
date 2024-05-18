@@ -398,13 +398,19 @@ h2 {
 .footer__right {
 	display: flex;
 }
+
+.footer__left{
+	justify-content: flex-start;
+	
+}
 .footer__right {
 	justify-content: end;
 	align-items: center;
 }
 
 .footer__social-icon.logo {
-	padding: 0.5em;
+	padding-right: 1em;
+	padding-top: .2vw;
 	width: 60px;
 }
 
