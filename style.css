@@ -364,8 +364,8 @@ h2 {
 .contact__form button:hover {
 	background-color: #e88201;
 }
-.contact__content .contact__right {
-	padding: 0 0 40px 0;
+.contact__content .contact__right { 
+	padding: 0 0 20px 0;
 	border-radius: 0;
 }
 
@@ -513,7 +513,7 @@ h2 {
 		height: 60px;
 	}
 	.box__innerContent {
-		padding: 100px 0px 40px 0px; /* upraveno - změna jak ve středním tak malém viewportu*/
+		padding: 100px 0px 40px 0px; /* EDIT- změna jak ve středním tak malém viewportu*/
 	}
 	.awards {
 		flex-wrap: nowrap;
@@ -550,8 +550,8 @@ h2 {
 		flex-wrap: nowrap;
 		flex-direction: row;
 	}
-	.contact__form {
-		padding-bottom: 40px;
+	.contact__form, .contact__right {
+		padding-bottom: 20px;
 	}
 }
 
@@ -638,8 +638,8 @@ h2 {
 	.contact__form button{
 		width: 120px;
 	}
-	.contact__map iframe {
-		height: 300px; 
+	.contact__map iframe { /* EDIT : zmenšení mapy, ať to nevypadá jak čtverec */
+		height: 200px; 
 	}
 	.footer .flex-container { 
 		flex-direction: column;
@@ -664,12 +664,13 @@ h2 {
 		margin: 4vw 0 4vw 0;
 	}
 }	
-@media (max-width: 424px) {
+@media (max-width: 424px) { /* EDIT - Na 424 px se v defaultní velikosti fontu lámaly prvky v menu na 2 řádky, doporuená velikost .9em mi přišla moc malá.*/
 	.wrapper {
 		max-width: calc(100% - 8vw);
 	}
 	*{
 		font-size: .97em;
 	}
+	
 }
 
